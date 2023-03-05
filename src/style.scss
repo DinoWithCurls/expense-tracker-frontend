@@ -1,0 +1,57 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$uber: #F5C842 ;
+$grocery: #2070C4;
+$food: #EB80F1;
+$water: #05BBD2 ;
+$other: #37D400;
+
+body {
+    background-color: cadetblue;
+    height: 100vh;
+    width: 100vw;
+}
+.group {
+    margin: 10px;
+
+}
+.group-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.legend {
+    border: 1px solid;
+    padding: 2px;
+    margin: 1px;
+    width: 10%
+}
+.uber {
+    border-color: $uber;
+    background-color: $uber;
+}
+.grocery {
+    border-color: $grocery;
+    background-color: $grocery;
+}
+.food {
+    border-color: $food;
+    background-color: $food;
+}
+.water {
+    border-color: $water;
+    background-color: $water;
+}
+.other {
+    border-color: $other;
+    background-color: $other;
+}
+.transaction-body {
+    padding: 2px;
+}
+.expense {
+    color: red;
+}
+.income {
+    color: green;
+}

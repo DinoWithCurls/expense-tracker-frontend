@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { ExpenseDetailsTab, ExpenseGraphTab, ExpenseFormTab } from "./tabs";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="body">
+      <div className="container-xl">
+        <div className="row">
+        <div className="col-lg-4">
+            <ExpenseFormTab />
+          </div>
+          <div className="col-lg-4">
+            <ExpenseGraphTab />
+          </div>
+          <div className="col-lg-4">
+          <ExpenseDetailsTab />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
