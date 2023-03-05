@@ -1,23 +1,13 @@
-import { ExpenseDetailsTab, ExpenseGraphTab, ExpenseFormTab } from "./tabs";
+import LoginScreen from './screens/login';
+import RegisterScreen from './screens/register';
+import DashboardScreen from './screens/dashboard';
 
-function App() {
+const App = () => {
   return (
-    <div className="body">
-      <div className="container-xl">
-        <div className="row">
-        <div className="col-lg-4">
-            <ExpenseFormTab />
-          </div>
-          <div className="col-lg-4">
-            <ExpenseGraphTab />
-          </div>
-          <div className="col-lg-4">
-          <ExpenseDetailsTab />
-          </div>
-        </div>
-      </div>
+    <div>
+      <DashboardScreen />
     </div>
-  );
+  )
 }
 
 export default App;
